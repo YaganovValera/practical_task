@@ -1,0 +1,135 @@
+/* jost-regular - latin */
+@font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Jost';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/jost-v15-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* jost-500 - latin */
+@font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Jost';
+    font-style: normal;
+    font-weight: 500;
+    src: url('../fonts/jost-v15-latin-500.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* jost-600 - latin */
+@font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Jost';
+    font-style: normal;
+    font-weight: 600;
+    src: url('../fonts/jost-v15-latin-600.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* jost-800 - latin */
+@font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Jost';
+    font-style: normal;
+    font-weight: 800;
+    src: url('../fonts/jost-v15-latin-800.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+
+html {
+    box-sizing: border-box;
+}
+
+*, *::after, *::before {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: "Jost", "Open Sans", sans-serif;
+    margin: 0;
+    font-family: 'Jost';
+    font-style: normal;
+    font-size: 24px;
+    font-weight: normal;
+    color: #1B1B1D;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style: none;
+    padding: 0; 
+    margin: 0;
+}
+
+.container {
+    max-width: 1240px;
+    margin: 0 auto;
+}
+
+/* Header styles start*/
+.header__container{
+    max-height: 104px;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 24px;
+    padding-bottom: 24px;
+}
+
+.logo{
+    width: 126px;
+    height: 50px;
+}
+
+.header__menu{
+    display: flex;
+    justify-content: flex-end;
+    width: 756px;
+    height: 56px;
+    font-weight: 500;
+    font-size: 15px;
+}
+
+.menu_list{
+    display: flex;
+    flex-direction: row;
+    width: 472px;
+    gap: 40px;
+    justify-content: space-between;
+    margin: 0px;
+    padding: 17px 40px 17px 0px;
+}
+
+.menu_link:hover, .menu_link:active, .menu_link:focus{
+    border-bottom: 1px solid;
+    opacity: .75;
+}
+
+.user-actions{
+    display: flex;
+    flex-direction: row;
+    width: 284px;
+    gap: 20px;
+}
+
+.menu__basket-btn{
+    width: 56px;
+    border-radius: 50%;
+    box-shadow: 0px 30px 60px 0px #A3A8B226;
+    border: 0;
+}
+
+.menu__basket-btn:hover{
+    background-color: #cecece;
+}
+
+.menu__buy-btn{
+    width: 208px;
+    border-radius: 63px;
+    background-color: #1B1B1D;
+    box-shadow: 0px 30px 60px 0px #A3A8B226;
+    color: #FFFFFF;
+}
+
+.menu__buy-btn:hover{
+    background-color: #1b1b1dd0;
+}
