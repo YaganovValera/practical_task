@@ -97,10 +97,6 @@ html {
 
 body {
     font-family: "Jost", "Open Sans", sans-serif;
-    margin: 0;
-    font-style: normal;
-    font-size: 24px;
-    font-weight: normal;
     color: #1B1B1D;
 }
 
@@ -121,8 +117,6 @@ a:hover, a:active, a:focus{
 
 ul {
     list-style: none;
-    padding: 0; 
-    margin: 0;
 }
 
 button{
@@ -166,46 +160,46 @@ p{
     padding-top: 24px;
 }
 
-.logo{
-    max-width: 126px;
-    max-height: 50px;
+.header__logo{
+    width: 126px;
     margin-right: 10px;
 }
 
-.logo:hover, .logo:active, .logo:focus{
+.header__logo:hover, .header__logo:active, .header__logo:focus{
     border: 0;
 }
 
 .header__menu{
     display: flex;
     justify-content: flex-end;
-    width: 756px;
-    height: 56px;
     font-weight: 500;
     font-size: 15px;
+    line-height: 21.68px;
 }
 
-.menu_list{
+.menu__list{
     display: flex;
     flex-direction: row;
-    width: 472px;
     justify-content: space-between;
+    gap: 40px;
     padding: 17px 40px 17px 0px;
 }
 
 
-.user-actions{
+.header__user-actions{
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    width: 284px;
+    gap: 20px;
+}
+
+.user-actions__basket-btn>img{
+    display: block;
 }
 
 .user-actions__basket-btn{
     background: #ffffff;
-    width: 56px;
     border-radius: 50%;
-    box-shadow: 0px 30px 60px 0px #A3A8B226;
+    padding: 16px;
 }
 
 .user-actions__basket-btn:hover{
@@ -213,12 +207,9 @@ p{
 }
 
 .user-actions__buy-btn{
-    padding: 15px 30px 15px 30px;
-    width: 208px;
+    padding: 15px 30px;
     border-radius: 63px;
-    box-shadow: 0px 30px 60px 0px #A3A8B226;
 }
-
 /* Header styles end*/
 
 
@@ -226,7 +217,6 @@ p{
 /* Intro styles start*/
 .intro{
     padding-top: 204px;
-    max-height: 916px;
 }
 
 .intro__container{
@@ -235,22 +225,21 @@ p{
 
 .intro__title{
     max-width: 597px;
+    margin-bottom: 30px;
     font-size: 124px;
     font-weight: 800;
     line-height: 140px;
-    margin-bottom: 30px;
 }
 
 .intro__subtitle{
-    max-width: 530px; 
+    max-width: 530px;
+    margin-bottom: 60px;
     font-size: 24px;
     font-weight: 400;
     line-height: 34.68px;
-    margin-bottom: 60px;
 }
 
 .intro__user-actions{
-    max-width: 376px;
     display: flex;
     align-items: center;
     gap: 30px;
@@ -289,29 +278,27 @@ p{
 .alowishus__header {
     margin-inline: auto;
     width: 702px;
-    height: 164px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
     margin-bottom: 90px;
 }
 
 .alowishus__title{
+    margin-bottom: 24px;
     font-size: 64px;
     font-weight: 800;
     line-height: 70px;
     text-align: center;
-    margin-bottom: 24px;
 }
 
 
 .alowishus__subtitle{
+    max-width: 604px;
     font-size: 24px;
     font-weight: 400;
     line-height: 34.68px;
     text-align: center;
-    max-width: 604px;
 }
 
 .alowishus-cards{
@@ -325,21 +312,19 @@ p{
     display: flex;
     flex-direction: column;
     align-items: center; 
-    box-shadow: 0px 30px 60px 0px #A3A8B226;
 }
 
 .alowishus-card-text{
-    max-height: 356px;
     max-width: 358px;
-    padding: 40px 0 0 40px;
     margin-bottom: 60px;
+    padding: 40px 0 0 40px;
 }
 
 .alowishus-card__title{
+    margin-bottom: 8px;
     font-size: 36px;
     font-weight: 600;
     line-height: 52.02px; 
-    margin-bottom: 8px;
 }
 
 .alowishus-cars__subtitle{
@@ -349,20 +334,19 @@ p{
 }
 
 .alowishus-card-icon{
-    width: 150px;
-    height: 150px;
+    max-width: 150px;
+    max-height: 150px;
     padding: 1.46px 0px 1.46px 0px;
     margin-bottom: 60px;
 }
 
 .alowishus-card__btn{
-    width: 225.39px;
+    margin-bottom: 40px; 
     padding: 15px 30px 15px 30px;
     border-radius: 126px;   
     font-size: 18px;
     font-weight: 500;
     line-height: 30px;  
-    margin-bottom: 40px; 
 }
 /* Alowishus style end */
 
@@ -380,7 +364,7 @@ p{
 
 .order-coffee__info{
     max-width: 513px;
-    padding: 15.63px 0;
+    padding: 16px 0;
 }
 
 .order-coffee__text{
@@ -413,7 +397,6 @@ p{
 /* customers style start*/
 .customers__header {
     max-width: 454px;
-    max-height: 240px;
     margin: 0 auto 100px;
 }
 
@@ -429,31 +412,29 @@ p{
     max-width: 300px;
     margin-inline: auto;
     display: flex;
-    align-items: center;
     gap: 24px;
 }
 
 .customers__estimation{
+    padding: 10px 0;
     font-size: 40px;
     font-weight: 600;
     line-height: 40px;
     color: #1B1B1D;
 }
 
-.castomers__rating-stars{
-    max-width: 120px;
+.customers__rating-stars-header, .customers__rating-stars-slider{
+    max-height: 24px;
     display: flex;
     flex-direction: row;
+}
+
+.customers__rating-stars-header{
     margin-bottom: 8px;
 }
 
-.castomers__rating-star{
-    max-height: 24px;
-}
-
-.rating-star-icon{
-    max-width: 24px;
-    max-height: 24px;
+.customers__rating-stars-slider{
+    padding: 3px 0;
 }
 
 .rating-stars__subtitle{
@@ -573,10 +554,16 @@ p{
     flex-wrap: wrap;
 }
 
-.contact__social_network-icon{
+.contact__social_network-link, .contact__social_network-icon{
     max-width: 60px;
     padding: 16px;
     margin-right: 24px;
+}
+
+.contact__social_network-link:hover,
+.contact__social_network-link:active,
+.contact__social_network-link:focus{
+    border-bottom: 0;
 }
 
 .contact__item-text{

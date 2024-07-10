@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Online Coffe Shop</title>
+    <title>Online Coffee Shop</title>
     <link rel="stylesheet" href="./css/style.css">
 
     <!-- Use Swiper from CDN -->
@@ -12,37 +12,36 @@
 
     <!-- Scripts -->
      <script src="./js/slider.js" defer></script>
+     <script src="./js/script.js" defer></script>
 
 </head>
 <body>
     <!-- header start -->
     <header class="header">
-        <div class="container">
-            <div class="header__container">
-                <a href="#" >
-                    <img src="img/svg/logo.svg" alt="logo" class="logo">
-                </a>
-                <div class="header__menu">
-                    <nav class="menu">
-                        <ul class="menu_list">
-                            <li class="menu_item">
-                                <a href="#" class="menu_link">Cafe Munu</a>
-                            </li>
-                            <li class="menu_item">
-                                <a href="#" class="menu_link">About Us</a>
-                            </li>
-                            <li class="menu_item">
-                                <a href="#" class="menu_link">Find Us</a>
-                            </li>
-                            <li class="menu_item">
-                                <a href="#" class="menu_link">Alowishus Catering</a>
-                            </li>
-                        </ul>
-                    </nav>
-                    <div class="user-actions">
-                        <button type="submit" class="user-actions__basket-btn"><img src="img/svg/basket.svg" alt="basket"></button>
-                        <button type="submit" class="user-actions__buy-btn">BUY GIFT VOUCHERS</button>
-                    </div>
+        <div class="container header__container">
+            <a href="#" class="header__logo">
+                <img src="img/svg/logo.svg" alt="logo">
+            </a>
+            <div class="header__menu">
+                <nav class="menu">
+                    <ul class="menu__list">
+                        <li class="menu__item">
+                            <a href="#" class="menu__link">Cafe Menu</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="#" class="menu__link">About Us</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="#" class="menu__link">Find Us</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="#" class="menu__link">Alowishus Catering</a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="header__user-actions">
+                    <button type="submit" class="user-actions__basket-btn"><img src="img/svg/basket.svg" alt="basket"></button>
+                    <button type="submit" class="user-actions__buy-btn">BUY GIFT VOUCHERS</button>
                 </div>
             </div>
         </div>
@@ -50,25 +49,23 @@
     <!-- header end -->
 
     <main class="main">
-        intro start
+        <!-- intro start --> 
         <section class="intro">
-            <div class="container">
-                <div class="intro__container">
-                    <div class="intro__info">
-                        <h1 class="intro__title">
-                            Alowishus Delicious Coffee 
-                        </h1>
-                        <p class="intro__subtitle">
-                            A drink from the ‘My Alowishus’ bottled brews range OR grab one of our delicious coffee’s.
-                        </p>
-                        <div class="intro__user-actions">
-                            <button type="submit" class="intro__download-btn">Download App</button>
-                            <a href="#" class="intro__shop-link">Shop Coffee</a>
-                        </div>
+            <div class="container intro__container">
+                <div class="intro__info">
+                    <h1 class="intro__title">
+                        Alowishus Delicious Coffee 
+                    </h1>
+                    <p class="intro__subtitle">
+                        A drink from the ‘My Alowishus’ bottled brews range OR grab one of our delicious coffee’s.
+                    </p>
+                    <div class="intro__user-actions">
+                        <button type="submit" class="intro__download-btn">Download App</button>
+                        <a href="#" class="intro__shop-link">Shop Coffee</a>
                     </div>
-                    <div class="intro__img">
-                        <img class="intro__cup-coffe-img" src="./img/intro__cup-coffe.png" alt="cup-coffe">
-                    </div>
+                </div>
+                <div class="intro__img">
+                    <img class="intro__cup-coffe-img" src="./img/intro__cup-coffe.png" alt="cup-coffee">
                 </div>
             </div>
         </section>
@@ -77,14 +74,14 @@
         <!-- alowishus start -->
         <section class="alowishus">
             <div class="container">
-                <div class="alowishus__header">
+                <header class="alowishus__header">
                     <h2 class="alowishus__title">
                         Explore Our Alowishus
                     </h2>
                     <p class="alowishus__subtitle">
                         A drink from the ‘My Alowishus’ bottled brews range OR grab one of our delicious coffee’s.
                     </p>
-                </div>
+                </header>
                 <div class="alowishus-cards">
                     <div class="alowishus-card">
                         <div class="alowishus-card-text">
@@ -125,18 +122,16 @@
 
         <!-- order-coffee start -->
         <section class="order-coffee">
-            <div class="container">
-                <div class="order-coffee-container">
-                    <div class="order-coffee__pic">
-                        <img src="./img/cups-coffee-group.jpg" alt="cups-coffee">
+            <div class="container order-coffee-container">
+                <div class="order-coffee__pic">
+                    <img src="./img/cups-coffee-group.jpg" alt="cups-coffee">
+                </div>
+                <div class="order-coffee__info">
+                    <div class="order-coffee__text">
+                        <h2 class="order-coffee__title">Order Your Favourite Coffee</h2>
+                        <p class="order-coffee__subtitle">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
                     </div>
-                    <div class="order-coffee__info">
-                        <div class="order-coffee__text">
-                            <h2 class="order-coffee__title">Order Your Favourite Coffee</h2>
-                            <p class="order-coffee__subtitle">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
-                        </div>
-                        <button class="order-coffee-btn">Order Now</button>
-                    </div>
+                    <button class="order-coffee-btn">Order Now</button>
                 </div>
             </div>
         </section>
@@ -144,183 +139,74 @@
 
         <!-- customers start -->
         <section class="customers">
-            <div class="container">
-                <div class="customers__container">
-                    <!-- customers header start -->
-                    <div class="customers__header">
-                        <h2 class="customers__title">What Our Customers Say</h2>
-                        <div class="customers__overall-rating">
-                            <p class="customers__estimation">4.9</p>
-                            <div>
-                                <ul class="castomers__rating-stars">
-                                    <li class="castomers__rating-star">
-                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M21.947 9.44902C21.818 9.07102 21.477 8.80402 21.079 8.77302L15.378 8.32002L12.911 2.85902C12.75 2.50002 12.393 2.27002 12 2.27002C11.607 2.27002 11.25 2.50002 11.089 2.85802L8.62197 8.32002L2.92097 8.77302C2.52997 8.80402 2.19297 9.06102 2.05997 9.43002C1.92697 9.79902 2.02097 10.212 2.30197 10.486L6.51497 14.593L5.02497 21.045C4.93297 21.444 5.09397 21.859 5.43097 22.092C5.60297 22.21 5.80097 22.27 5.99997 22.27C6.19297 22.27 6.38697 22.214 6.55497 22.102L12 18.472L17.445 22.102C17.793 22.334 18.25 22.325 18.59 22.078C18.928 21.831 19.077 21.398 18.962 20.996L17.133 14.596L21.669 10.514C21.966 10.246 22.075 9.82802 21.947 9.44902Z" fill="#FFB700"/>
-                                        </svg>
-                                    </li>
-                                    <li class="castomers__rating-star">
-                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M21.947 9.44902C21.818 9.07102 21.477 8.80402 21.079 8.77302L15.378 8.32002L12.911 2.85902C12.75 2.50002 12.393 2.27002 12 2.27002C11.607 2.27002 11.25 2.50002 11.089 2.85802L8.62197 8.32002L2.92097 8.77302C2.52997 8.80402 2.19297 9.06102 2.05997 9.43002C1.92697 9.79902 2.02097 10.212 2.30197 10.486L6.51497 14.593L5.02497 21.045C4.93297 21.444 5.09397 21.859 5.43097 22.092C5.60297 22.21 5.80097 22.27 5.99997 22.27C6.19297 22.27 6.38697 22.214 6.55497 22.102L12 18.472L17.445 22.102C17.793 22.334 18.25 22.325 18.59 22.078C18.928 21.831 19.077 21.398 18.962 20.996L17.133 14.596L21.669 10.514C21.966 10.246 22.075 9.82802 21.947 9.44902Z" fill="#FFB700"/>
-                                        </svg>
-                                    </li>
-                                    <li class="castomers__rating-star">
-                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M21.947 9.44902C21.818 9.07102 21.477 8.80402 21.079 8.77302L15.378 8.32002L12.911 2.85902C12.75 2.50002 12.393 2.27002 12 2.27002C11.607 2.27002 11.25 2.50002 11.089 2.85802L8.62197 8.32002L2.92097 8.77302C2.52997 8.80402 2.19297 9.06102 2.05997 9.43002C1.92697 9.79902 2.02097 10.212 2.30197 10.486L6.51497 14.593L5.02497 21.045C4.93297 21.444 5.09397 21.859 5.43097 22.092C5.60297 22.21 5.80097 22.27 5.99997 22.27C6.19297 22.27 6.38697 22.214 6.55497 22.102L12 18.472L17.445 22.102C17.793 22.334 18.25 22.325 18.59 22.078C18.928 21.831 19.077 21.398 18.962 20.996L17.133 14.596L21.669 10.514C21.966 10.246 22.075 9.82802 21.947 9.44902Z" fill="#FFB700"/>
-                                        </svg>
-                                    </li>
-                                    <li class="castomers__rating-star">
-                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M21.947 9.44902C21.818 9.07102 21.477 8.80402 21.079 8.77302L15.378 8.32002L12.911 2.85902C12.75 2.50002 12.393 2.27002 12 2.27002C11.607 2.27002 11.25 2.50002 11.089 2.85802L8.62197 8.32002L2.92097 8.77302C2.52997 8.80402 2.19297 9.06102 2.05997 9.43002C1.92697 9.79902 2.02097 10.212 2.30197 10.486L6.51497 14.593L5.02497 21.045C4.93297 21.444 5.09397 21.859 5.43097 22.092C5.60297 22.21 5.80097 22.27 5.99997 22.27C6.19297 22.27 6.38697 22.214 6.55497 22.102L12 18.472L17.445 22.102C17.793 22.334 18.25 22.325 18.59 22.078C18.928 21.831 19.077 21.398 18.962 20.996L17.133 14.596L21.669 10.514C21.966 10.246 22.075 9.82802 21.947 9.44902Z" fill="#FFB700"/>
-                                        </svg>
-                                    </li>
-                                    <li class="castomers__rating-star">
-                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M21.947 9.44902C21.818 9.07102 21.477 8.80402 21.079 8.77302L15.378 8.32002L12.911 2.85902C12.75 2.50002 12.393 2.27002 12 2.27002C11.607 2.27002 11.25 2.50002 11.089 2.85802L8.62197 8.32002L2.92097 8.77302C2.52997 8.80402 2.19297 9.06102 2.05997 9.43002C1.92697 9.79902 2.02097 10.212 2.30197 10.486L6.51497 14.593L5.02497 21.045C4.93297 21.444 5.09397 21.859 5.43097 22.092C5.60297 22.21 5.80097 22.27 5.99997 22.27C6.19297 22.27 6.38697 22.214 6.55497 22.102L12 18.472L17.445 22.102C17.793 22.334 18.25 22.325 18.59 22.078C18.928 21.831 19.077 21.398 18.962 20.996L17.133 14.596L21.669 10.514C21.966 10.246 22.075 9.82802 21.947 9.44902Z" fill="#FFB700"/>
-                                        </svg>
-                                    </li>
-                                </ul>
-                                <p class="rating-stars__subtitle">based on 2452+ reviews</p>
-                            </div>
+            <div class="container customers__container">
+                <!-- customers header start -->
+                <div class="customers__header">
+                    <h2 class="customers__title">What Our Customers Say</h2>
+                    <div class="customers__overall-rating">
+                        <p class="customers__estimation">4.9</p>
+                        <div>
+                            <ul class="customers__rating-stars-header js-rating-stars"></ul>
+                            <p class="rating-stars__subtitle">based on 2452+ reviews</p>
                         </div>
                     </div>
-                    <!-- customers header end -->
-
-                    <!-- customers slider start-->
-                    <div class="slider-wrapper">
-
-                        <div class="swiper js-swiper">
-                            <div class="swiper-wrapper">
-                
-                                <article class="card-customer swiper-slide">
-                                    <img src="./img/customer_Brooklyn_Simmons.jpg" alt="customer_Brooklyn_Simmons.jpg">
-                                    <div class="card-customer__text">
-                                        <div class="card-customer__header">
-                                            <h5 class="card-customer__title">Brooklyn Simmons</h5>
-                                            <ul class="castomers__rating-stars">
-                                                <li class="castomers__rating-star">
-                                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                        <path d="M21.947 9.44902C21.818 9.07102 21.477 8.80402 21.079 8.77302L15.378 8.32002L12.911 2.85902C12.75 2.50002 12.393 2.27002 12 2.27002C11.607 2.27002 11.25 2.50002 11.089 2.85802L8.62197 8.32002L2.92097 8.77302C2.52997 8.80402 2.19297 9.06102 2.05997 9.43002C1.92697 9.79902 2.02097 10.212 2.30197 10.486L6.51497 14.593L5.02497 21.045C4.93297 21.444 5.09397 21.859 5.43097 22.092C5.60297 22.21 5.80097 22.27 5.99997 22.27C6.19297 22.27 6.38697 22.214 6.55497 22.102L12 18.472L17.445 22.102C17.793 22.334 18.25 22.325 18.59 22.078C18.928 21.831 19.077 21.398 18.962 20.996L17.133 14.596L21.669 10.514C21.966 10.246 22.075 9.82802 21.947 9.44902Z" fill="#FFB700"/>
-                                                    </svg>
-                                                </li>
-                                                <li class="castomers__rating-star">
-                                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                        <path d="M21.947 9.44902C21.818 9.07102 21.477 8.80402 21.079 8.77302L15.378 8.32002L12.911 2.85902C12.75 2.50002 12.393 2.27002 12 2.27002C11.607 2.27002 11.25 2.50002 11.089 2.85802L8.62197 8.32002L2.92097 8.77302C2.52997 8.80402 2.19297 9.06102 2.05997 9.43002C1.92697 9.79902 2.02097 10.212 2.30197 10.486L6.51497 14.593L5.02497 21.045C4.93297 21.444 5.09397 21.859 5.43097 22.092C5.60297 22.21 5.80097 22.27 5.99997 22.27C6.19297 22.27 6.38697 22.214 6.55497 22.102L12 18.472L17.445 22.102C17.793 22.334 18.25 22.325 18.59 22.078C18.928 21.831 19.077 21.398 18.962 20.996L17.133 14.596L21.669 10.514C21.966 10.246 22.075 9.82802 21.947 9.44902Z" fill="#FFB700"/>
-                                                    </svg>
-                                                </li>
-                                                <li class="castomers__rating-star">
-                                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                        <path d="M21.947 9.44902C21.818 9.07102 21.477 8.80402 21.079 8.77302L15.378 8.32002L12.911 2.85902C12.75 2.50002 12.393 2.27002 12 2.27002C11.607 2.27002 11.25 2.50002 11.089 2.85802L8.62197 8.32002L2.92097 8.77302C2.52997 8.80402 2.19297 9.06102 2.05997 9.43002C1.92697 9.79902 2.02097 10.212 2.30197 10.486L6.51497 14.593L5.02497 21.045C4.93297 21.444 5.09397 21.859 5.43097 22.092C5.60297 22.21 5.80097 22.27 5.99997 22.27C6.19297 22.27 6.38697 22.214 6.55497 22.102L12 18.472L17.445 22.102C17.793 22.334 18.25 22.325 18.59 22.078C18.928 21.831 19.077 21.398 18.962 20.996L17.133 14.596L21.669 10.514C21.966 10.246 22.075 9.82802 21.947 9.44902Z" fill="#FFB700"/>
-                                                    </svg>
-                                                </li>
-                                                <li class="castomers__rating-star">
-                                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                        <path d="M21.947 9.44902C21.818 9.07102 21.477 8.80402 21.079 8.77302L15.378 8.32002L12.911 2.85902C12.75 2.50002 12.393 2.27002 12 2.27002C11.607 2.27002 11.25 2.50002 11.089 2.85802L8.62197 8.32002L2.92097 8.77302C2.52997 8.80402 2.19297 9.06102 2.05997 9.43002C1.92697 9.79902 2.02097 10.212 2.30197 10.486L6.51497 14.593L5.02497 21.045C4.93297 21.444 5.09397 21.859 5.43097 22.092C5.60297 22.21 5.80097 22.27 5.99997 22.27C6.19297 22.27 6.38697 22.214 6.55497 22.102L12 18.472L17.445 22.102C17.793 22.334 18.25 22.325 18.59 22.078C18.928 21.831 19.077 21.398 18.962 20.996L17.133 14.596L21.669 10.514C21.966 10.246 22.075 9.82802 21.947 9.44902Z" fill="#FFB700"/>
-                                                    </svg>
-                                                </li>
-                                                <li class="castomers__rating-star">
-                                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                        <path d="M21.947 9.44902C21.818 9.07102 21.477 8.80402 21.079 8.77302L15.378 8.32002L12.911 2.85902C12.75 2.50002 12.393 2.27002 12 2.27002C11.607 2.27002 11.25 2.50002 11.089 2.85802L8.62197 8.32002L2.92097 8.77302C2.52997 8.80402 2.19297 9.06102 2.05997 9.43002C1.92697 9.79902 2.02097 10.212 2.30197 10.486L6.51497 14.593L5.02497 21.045C4.93297 21.444 5.09397 21.859 5.43097 22.092C5.60297 22.21 5.80097 22.27 5.99997 22.27C6.19297 22.27 6.38697 22.214 6.55497 22.102L12 18.472L17.445 22.102C17.793 22.334 18.25 22.325 18.59 22.078C18.928 21.831 19.077 21.398 18.962 20.996L17.133 14.596L21.669 10.514C21.966 10.246 22.075 9.82802 21.947 9.44902Z" fill="#FFB700"/>
-                                                    </svg>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                        <p class="card-customer__subtitle">
-                                            “Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet. Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia”
-                                        </p>
-                                    </div>
-                                </article>
-                
-                                <article class="card-customer swiper-slide">
-                                    <img src="./img/customer_Imam_White.jpg" alt="customer_Imam_White.jpg">
-                                    <div class="card-customer__text">
-                                        <div class="card-customer__header">
-                                            <h5 class="card-customer__title">Imam White</h5>
-                                            <ul class="castomers__rating-stars">
-                                                <li class="castomers__rating-star">
-                                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                        <path d="M21.947 9.44902C21.818 9.07102 21.477 8.80402 21.079 8.77302L15.378 8.32002L12.911 2.85902C12.75 2.50002 12.393 2.27002 12 2.27002C11.607 2.27002 11.25 2.50002 11.089 2.85802L8.62197 8.32002L2.92097 8.77302C2.52997 8.80402 2.19297 9.06102 2.05997 9.43002C1.92697 9.79902 2.02097 10.212 2.30197 10.486L6.51497 14.593L5.02497 21.045C4.93297 21.444 5.09397 21.859 5.43097 22.092C5.60297 22.21 5.80097 22.27 5.99997 22.27C6.19297 22.27 6.38697 22.214 6.55497 22.102L12 18.472L17.445 22.102C17.793 22.334 18.25 22.325 18.59 22.078C18.928 21.831 19.077 21.398 18.962 20.996L17.133 14.596L21.669 10.514C21.966 10.246 22.075 9.82802 21.947 9.44902Z" fill="#FFB700"/>
-                                                    </svg>
-                                                </li>
-                                                <li class="castomers__rating-star">
-                                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                        <path d="M21.947 9.44902C21.818 9.07102 21.477 8.80402 21.079 8.77302L15.378 8.32002L12.911 2.85902C12.75 2.50002 12.393 2.27002 12 2.27002C11.607 2.27002 11.25 2.50002 11.089 2.85802L8.62197 8.32002L2.92097 8.77302C2.52997 8.80402 2.19297 9.06102 2.05997 9.43002C1.92697 9.79902 2.02097 10.212 2.30197 10.486L6.51497 14.593L5.02497 21.045C4.93297 21.444 5.09397 21.859 5.43097 22.092C5.60297 22.21 5.80097 22.27 5.99997 22.27C6.19297 22.27 6.38697 22.214 6.55497 22.102L12 18.472L17.445 22.102C17.793 22.334 18.25 22.325 18.59 22.078C18.928 21.831 19.077 21.398 18.962 20.996L17.133 14.596L21.669 10.514C21.966 10.246 22.075 9.82802 21.947 9.44902Z" fill="#FFB700"/>
-                                                    </svg>
-                                                </li>
-                                                <li class="castomers__rating-star">
-                                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                        <path d="M21.947 9.44902C21.818 9.07102 21.477 8.80402 21.079 8.77302L15.378 8.32002L12.911 2.85902C12.75 2.50002 12.393 2.27002 12 2.27002C11.607 2.27002 11.25 2.50002 11.089 2.85802L8.62197 8.32002L2.92097 8.77302C2.52997 8.80402 2.19297 9.06102 2.05997 9.43002C1.92697 9.79902 2.02097 10.212 2.30197 10.486L6.51497 14.593L5.02497 21.045C4.93297 21.444 5.09397 21.859 5.43097 22.092C5.60297 22.21 5.80097 22.27 5.99997 22.27C6.19297 22.27 6.38697 22.214 6.55497 22.102L12 18.472L17.445 22.102C17.793 22.334 18.25 22.325 18.59 22.078C18.928 21.831 19.077 21.398 18.962 20.996L17.133 14.596L21.669 10.514C21.966 10.246 22.075 9.82802 21.947 9.44902Z" fill="#FFB700"/>
-                                                    </svg>
-                                                </li>
-                                                <li class="castomers__rating-star">
-                                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                        <path d="M21.947 9.44902C21.818 9.07102 21.477 8.80402 21.079 8.77302L15.378 8.32002L12.911 2.85902C12.75 2.50002 12.393 2.27002 12 2.27002C11.607 2.27002 11.25 2.50002 11.089 2.85802L8.62197 8.32002L2.92097 8.77302C2.52997 8.80402 2.19297 9.06102 2.05997 9.43002C1.92697 9.79902 2.02097 10.212 2.30197 10.486L6.51497 14.593L5.02497 21.045C4.93297 21.444 5.09397 21.859 5.43097 22.092C5.60297 22.21 5.80097 22.27 5.99997 22.27C6.19297 22.27 6.38697 22.214 6.55497 22.102L12 18.472L17.445 22.102C17.793 22.334 18.25 22.325 18.59 22.078C18.928 21.831 19.077 21.398 18.962 20.996L17.133 14.596L21.669 10.514C21.966 10.246 22.075 9.82802 21.947 9.44902Z" fill="#FFB700"/>
-                                                    </svg>
-                                                </li>
-                                                <li class="castomers__rating-star">
-                                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                        <path d="M21.947 9.44902C21.818 9.07102 21.477 8.80402 21.079 8.77302L15.378 8.32002L12.911 2.85902C12.75 2.50002 12.393 2.27002 12 2.27002C11.607 2.27002 11.25 2.50002 11.089 2.85802L8.62197 8.32002L2.92097 8.77302C2.52997 8.80402 2.19297 9.06102 2.05997 9.43002C1.92697 9.79902 2.02097 10.212 2.30197 10.486L6.51497 14.593L5.02497 21.045C4.93297 21.444 5.09397 21.859 5.43097 22.092C5.60297 22.21 5.80097 22.27 5.99997 22.27C6.19297 22.27 6.38697 22.214 6.55497 22.102L12 18.472L17.445 22.102C17.793 22.334 18.25 22.325 18.59 22.078C18.928 21.831 19.077 21.398 18.962 20.996L17.133 14.596L21.669 10.514C21.966 10.246 22.075 9.82802 21.947 9.44902Z" fill="#FFB700"/>
-                                                    </svg>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                        <p class="card-customer__subtitle">
-                                            “Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet. Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia”                                        </p>
-                                    </div>
-                                </article>
-
-                                <article class="card-customer swiper-slide">
-                                    <img src="./img/customer_Brooklyn_Simmons.jpg" alt="customer_Brooklyn_Simmons.jpg">
-                                    <div class="card-customer__text">
-                                        <div class="card-customer__header">
-                                            <h5 class="card-customer__title">Brooklyn Simmons</h5>
-                                            <ul class="castomers__rating-stars">
-                                                <li class="castomers__rating-star">
-                                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                        <path d="M21.947 9.44902C21.818 9.07102 21.477 8.80402 21.079 8.77302L15.378 8.32002L12.911 2.85902C12.75 2.50002 12.393 2.27002 12 2.27002C11.607 2.27002 11.25 2.50002 11.089 2.85802L8.62197 8.32002L2.92097 8.77302C2.52997 8.80402 2.19297 9.06102 2.05997 9.43002C1.92697 9.79902 2.02097 10.212 2.30197 10.486L6.51497 14.593L5.02497 21.045C4.93297 21.444 5.09397 21.859 5.43097 22.092C5.60297 22.21 5.80097 22.27 5.99997 22.27C6.19297 22.27 6.38697 22.214 6.55497 22.102L12 18.472L17.445 22.102C17.793 22.334 18.25 22.325 18.59 22.078C18.928 21.831 19.077 21.398 18.962 20.996L17.133 14.596L21.669 10.514C21.966 10.246 22.075 9.82802 21.947 9.44902Z" fill="#FFB700"/>
-                                                    </svg>
-                                                </li>
-                                                <li class="castomers__rating-star">
-                                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                        <path d="M21.947 9.44902C21.818 9.07102 21.477 8.80402 21.079 8.77302L15.378 8.32002L12.911 2.85902C12.75 2.50002 12.393 2.27002 12 2.27002C11.607 2.27002 11.25 2.50002 11.089 2.85802L8.62197 8.32002L2.92097 8.77302C2.52997 8.80402 2.19297 9.06102 2.05997 9.43002C1.92697 9.79902 2.02097 10.212 2.30197 10.486L6.51497 14.593L5.02497 21.045C4.93297 21.444 5.09397 21.859 5.43097 22.092C5.60297 22.21 5.80097 22.27 5.99997 22.27C6.19297 22.27 6.38697 22.214 6.55497 22.102L12 18.472L17.445 22.102C17.793 22.334 18.25 22.325 18.59 22.078C18.928 21.831 19.077 21.398 18.962 20.996L17.133 14.596L21.669 10.514C21.966 10.246 22.075 9.82802 21.947 9.44902Z" fill="#FFB700"/>
-                                                    </svg>
-                                                </li>
-                                                <li class="castomers__rating-star">
-                                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                        <path d="M21.947 9.44902C21.818 9.07102 21.477 8.80402 21.079 8.77302L15.378 8.32002L12.911 2.85902C12.75 2.50002 12.393 2.27002 12 2.27002C11.607 2.27002 11.25 2.50002 11.089 2.85802L8.62197 8.32002L2.92097 8.77302C2.52997 8.80402 2.19297 9.06102 2.05997 9.43002C1.92697 9.79902 2.02097 10.212 2.30197 10.486L6.51497 14.593L5.02497 21.045C4.93297 21.444 5.09397 21.859 5.43097 22.092C5.60297 22.21 5.80097 22.27 5.99997 22.27C6.19297 22.27 6.38697 22.214 6.55497 22.102L12 18.472L17.445 22.102C17.793 22.334 18.25 22.325 18.59 22.078C18.928 21.831 19.077 21.398 18.962 20.996L17.133 14.596L21.669 10.514C21.966 10.246 22.075 9.82802 21.947 9.44902Z" fill="#FFB700"/>
-                                                    </svg>
-                                                </li>
-                                                <li class="castomers__rating-star">
-                                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                        <path d="M21.947 9.44902C21.818 9.07102 21.477 8.80402 21.079 8.77302L15.378 8.32002L12.911 2.85902C12.75 2.50002 12.393 2.27002 12 2.27002C11.607 2.27002 11.25 2.50002 11.089 2.85802L8.62197 8.32002L2.92097 8.77302C2.52997 8.80402 2.19297 9.06102 2.05997 9.43002C1.92697 9.79902 2.02097 10.212 2.30197 10.486L6.51497 14.593L5.02497 21.045C4.93297 21.444 5.09397 21.859 5.43097 22.092C5.60297 22.21 5.80097 22.27 5.99997 22.27C6.19297 22.27 6.38697 22.214 6.55497 22.102L12 18.472L17.445 22.102C17.793 22.334 18.25 22.325 18.59 22.078C18.928 21.831 19.077 21.398 18.962 20.996L17.133 14.596L21.669 10.514C21.966 10.246 22.075 9.82802 21.947 9.44902Z" fill="#FFB700"/>
-                                                    </svg>
-                                                </li>
-                                                <li class="castomers__rating-star">
-                                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                        <path d="M21.947 9.44902C21.818 9.07102 21.477 8.80402 21.079 8.77302L15.378 8.32002L12.911 2.85902C12.75 2.50002 12.393 2.27002 12 2.27002C11.607 2.27002 11.25 2.50002 11.089 2.85802L8.62197 8.32002L2.92097 8.77302C2.52997 8.80402 2.19297 9.06102 2.05997 9.43002C1.92697 9.79902 2.02097 10.212 2.30197 10.486L6.51497 14.593L5.02497 21.045C4.93297 21.444 5.09397 21.859 5.43097 22.092C5.60297 22.21 5.80097 22.27 5.99997 22.27C6.19297 22.27 6.38697 22.214 6.55497 22.102L12 18.472L17.445 22.102C17.793 22.334 18.25 22.325 18.59 22.078C18.928 21.831 19.077 21.398 18.962 20.996L17.133 14.596L21.669 10.514C21.966 10.246 22.075 9.82802 21.947 9.44902Z" fill="#FFB700"/>
-                                                    </svg>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                        <p class="card-customer__subtitle">
-                                            “Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet. Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia”
-                                        </p>
-                                    </div>
-                                </article>
-                            </div>
-                
-                        </div>
-                
-                        <div class=" button-arrow button-arrow--prev js-arrow-prev">
-                            <img src="./img/svg/left_arrow.svg" alt="left_arrow">
-                        </div>
-
-                        <div class=" button-arrow button-arrow--next js-arrow-next">
-                            <img src="./img/svg/right_arrow.svg" alt="right_arrow">
-                        </div>
-                    </div>
-                    <!-- customers slider end -->
-
                 </div>
+                <!-- customers header end -->
+
+                <!-- customers slider start-->
+                <div class="slider-wrapper">
+
+                    <div class="swiper js-swiper">
+                        <div class="swiper-wrapper">
+            
+                            <article class="card-customer swiper-slide">
+                                <img src="./img/customer_Brooklyn_Simmons.jpg" alt="customer_Brooklyn_Simmons.jpg">
+                                <div class="card-customer__text">
+                                    <div class="card-customer__header">
+                                        <h5 class="card-customer__title">Brooklyn Simmons</h5>
+                                        <ul class="customers__rating-stars-slider js-rating-stars"></ul>
+                                    </div>
+                                    <p class="card-customer__subtitle">
+                                        “Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet. Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia”
+                                    </p>
+                                </div>
+                            </article>
+            
+                            <article class="card-customer swiper-slide">
+                                <img src="./img/customer_Imam_White.jpg" alt="customer_Imam_White.jpg">
+                                <div class="card-customer__text">
+                                    <div class="card-customer__header">
+                                        <h5 class="card-customer__title">Imam White</h5>
+                                        <ul class="customers__rating-stars-slider js-rating-stars"></ul>                                    </div>
+                                    <p class="card-customer__subtitle">
+                                        “Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet. Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia”                                        </p>
+                                </div>
+                            </article>
+
+                            <article class="card-customer swiper-slide">
+                                <img src="./img/customer_Brooklyn_Simmons.jpg" alt="customer_Brooklyn_Simmons.jpg">
+                                <div class="card-customer__text">
+                                    <div class="card-customer__header">
+                                        <h5 class="card-customer__title">Brooklyn Simmons</h5>
+                                        <ul class="customers__rating-stars-slider js-rating-stars"></ul>                                    </div>
+                                    <p class="card-customer__subtitle">
+                                        “Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet. Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia”
+                                    </p>
+                                </div>
+                            </article>
+                        </div>
+            
+                    </div>
+            
+                    <div class=" button-arrow button-arrow--prev js-arrow-prev">
+                        <img src="./img/svg/left_arrow.svg" alt="left_arrow">
+                    </div>
+
+                    <div class=" button-arrow button-arrow--next js-arrow-next">
+                        <img src="./img/svg/right_arrow.svg" alt="right_arrow">
+                    </div>
+                </div>
+                <!-- customers slider end -->
 
             </div>
         </section>
@@ -351,10 +237,10 @@
                             </li>
                             <li class="contact__item">
                                 <ul class="contact__list_social_network">
-                                    <li class="contact__social_network-link"><img src="./img/svg/facebook.svg" alt="facebook.svg" class="contact__social_network-icon"></li>
-                                    <li class="contact__social_network-link"><img src="./img/svg/instagram.svg" alt="instagram.svg" class="contact__social_network-icon"></li>
-                                    <li class="contact__social_network-link"><img src="./img/svg/twitter.svg" alt="twitter.svg" class="contact__social_network-icon"></li>
-                                    <li class="contact__social_network-link"><img src="./img/svg/linkedin.svg" alt="linkedin.svg" class="contact__social_network-icon"></li>
+                                    <li class="contact__social_network-item"><a href="#" class="contact__social_network-link"><img src="./img/svg/facebook.svg" alt="facebook.svg" ></a></li>
+                                    <li class="contact__social_network-item"><a href="#" class="contact__social_network-link"><img src="./img/svg/instagram.svg" alt="instagram.svg" ></a></li>
+                                    <li class="contact__social_network-item"><a href="#" class="contact__social_network-link"><img src="./img/svg/twitter.svg" alt="twitter.svg"></a></li>
+                                    <li class="contact__social_network-item"><a href="#" class="contact__social_network-link"><img src="./img/svg/linkedin.svg" alt="linkedin.svg"></a></li>
                                 </ul>
                             </li>
                         </ul>
