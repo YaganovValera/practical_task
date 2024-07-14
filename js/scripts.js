@@ -1,4 +1,31 @@
 
+
+/*========================================= create burger-menu ============================================*/
+document.addEventListener('DOMContentLoaded', function() {
+    const burgerMenu = document.querySelector('.js-burger-menu');
+    const headerMenu = document.querySelector('.js-header__menu');
+
+    burgerMenu.addEventListener('click', function(event) {
+        event.stopPropagation(); 
+        headerMenu.classList.toggle('active');
+        
+        if (headerMenu.classList.contains('active')) {
+            document.addEventListener('click', closeMenuOnClickOutside);
+        }
+    });
+
+    function closeMenuOnClickOutside(event) {
+        const isClickInside = headerMenu.contains(event.target) || burgerMenu.contains(event.target);
+
+        if (!isClickInside) {
+            headerMenu.classList.remove('active');
+            document.removeEventListener('click', closeMenuOnClickOutside);
+        }
+    }
+});
+
+/*==========================================================================================================*/
+
 /*========================================= create rating stars ============================================*/
 const starSvg = `
 <svg width="24" class="rating-star-icon" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -16,4 +43,4 @@ ratingStars.forEach(ul => {
         ul.appendChild(li);
     }
 });
-/*======================================================================================================*/
+/*=========================================================================================================*/
